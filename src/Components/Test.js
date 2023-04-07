@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SelectOption = () => {
+const Test = () => {
   const wholeAddress = [
     {
       divisionName: "Dhaka division",
@@ -150,7 +150,9 @@ const SelectOption = () => {
   ];
 
   const [division, setDivision] = useState("");
+
   const [district, setDistrict] = useState("");
+
   const [thana, setThana] = useState("");
 
   const [districts, setDistricts] = useState([]);
@@ -176,12 +178,17 @@ const SelectOption = () => {
     setThana(event.target.value);
   };
 
+  //   console.log("country==", country);
+  //   console.log("statesss===", state);
+  //   console.log("city====", city);
+
   const handleAddress = (e) => {
     e.preventDefault();
     console.log("form data=", division, "- ", district, " -", thana);
   };
   return (
     <div>
+      test
       <form onSubmit={handleAddress}>
         <div
           style={{
@@ -237,4 +244,4 @@ const SelectOption = () => {
   );
 };
 
-export default SelectOption;
+export default Test;
