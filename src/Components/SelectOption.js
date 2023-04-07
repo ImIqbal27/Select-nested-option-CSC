@@ -108,6 +108,18 @@ const SelectOption = () => {
           ))}
         </select>
       </div>
+      <hr />
+      <div>
+        <p>
+          You have select country: <h2 style={{ color: "red" }}>{country}</h2>
+        </p>
+        <p>
+          You have select state:<h2 style={{ color: "red" }}> {state}</h2>
+        </p>
+        <p>
+          You have select city: <h2 style={{ color: "red" }}>{city}</h2>
+        </p>
+      </div>
     </div>
   );
 };
