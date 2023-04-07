@@ -87,8 +87,12 @@ const SelectOption = () => {
   return (
     <div>
       <form onSubmit={handleAddress}>
-        <div>
-          <div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}>
+          <div style={{ marginRight: "40px" }}>
             <h3>Select Country</h3>
             <select value={country} onChange={changeCountry}>
               <option>--Country--</option>
@@ -97,7 +101,7 @@ const SelectOption = () => {
               ))}
             </select>
           </div>
-          <div>
+          <div style={{ marginRight: "40px" }}>
             <h3>Select State</h3>
             <select value={state} onChange={changeState}>
               <option>--State--</option>
@@ -106,7 +110,7 @@ const SelectOption = () => {
               ))}
             </select>
           </div>
-          <div>
+          <div style={{ marginRight: "40px" }}>
             <h3>Select City</h3>
             <select value={city} onChange={changeCity}>
               <option>--City--</option>
@@ -115,20 +119,22 @@ const SelectOption = () => {
               ))}
             </select>
           </div>
-          <button type="submit">Okay</button>
+          <br />
+          <div style={{ marginLeft: "40px", marginTop: "61px" }}>
+            <button type="submit">Okay</button>
+          </div>
         </div>
       </form>
 
-      <hr />
       <div>
         <p>
-          You have select country: <h2 style={{ color: "red" }}>{country}</h2>
+          You have selected country: <h4 style={{ color: "red" }}>{country}</h4>
         </p>
         <p>
-          You have select state:<h2 style={{ color: "red" }}> {state}</h2>
+          You have selected state:<h4 style={{ color: "red" }}> {state}</h4>
         </p>
         <p>
-          You have select city: <h2 style={{ color: "red" }}>{city}</h2>
+          You have selected city: <h4 style={{ color: "red" }}>{city}</h4>
         </p>
       </div>
     </div>
