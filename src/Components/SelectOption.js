@@ -84,7 +84,7 @@ const SelectOption = () => {
     // const country = country;
     // const state = state;
     // const city = city;
-    console.log(country, "- ", state, " -", city);
+    console.log("form data=", country, "- ", state, " -", city);
   };
 
   return (
