@@ -223,14 +223,15 @@ const SelectOption = () => {
       </form>
       <div>
         <p>
-          You have selected country:{" "}
+          You have selected division:{" "}
           <h4 style={{ color: "red" }}>{division}</h4>
         </p>
         <p>
-          You have selected state:<h4 style={{ color: "red" }}> {district}</h4>
+          You have selected district:
+          <h4 style={{ color: "red" }}> {district}</h4>
         </p>
         <p>
-          You have selected city: <h4 style={{ color: "red" }}>{thana}</h4>
+          You have selected thana: <h4 style={{ color: "red" }}>{thana}</h4>
         </p>
       </div>
     </div>
