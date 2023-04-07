@@ -1,7 +1,3 @@
-# Getting Started with Create React App
+# Select-division-district-thana [https://division-district-thana.vercel.app/](https://division-district-thana.vercel.app/).
 
-Select-nested-option-country-state-city [select-nested-option-country-state-city](https://select-nested-option-country-state-city.vercel.app/).
-
-## Available Scripts
-
-Select nested option like Country ..then State ...and then City
+### Select nested option like Country ..then State ...and then City
