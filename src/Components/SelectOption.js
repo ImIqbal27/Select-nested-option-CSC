@@ -79,35 +79,49 @@ const SelectOption = () => {
   console.log("statesss===", state);
   console.log("city====", city);
 
+  const handleAddress = (e) => {
+    e.preventDefault();
+    // const country = country;
+    // const state = state;
+    // const city = city;
+    console.log(country, "- ", state, " -", city);
+  };
+
   return (
     <div>
-      <div>
-        <h3>Select Country</h3>
-        <select value={country} onChange={changeCountry}>
-          <option>--Country--</option>
-          {countries.map((ctr) => (
-            <option value={ctr.name}>{ctr.name}</option>
-          ))}
-        </select>
-      </div>
-      <div>
-        <h3>Select State</h3>
-        <select value={state} onChange={changeState}>
-          <option>--State--</option>
-          {states.map((state) => (
-            <option value={state.name}>{state.name}</option>
-          ))}
-        </select>
-      </div>
-      <div>
-        <h3>Select City</h3>
-        <select value={city} onChange={changeCity}>
-          <option>--City--</option>
-          {cities.map((city) => (
-            <option value={city}>{city}</option>
-          ))}
-        </select>
-      </div>
+      <form onSubmit={handleAddress}>
+        <div>
+          <div>
+            <h3>Select Country</h3>
+            <select value={country} onChange={changeCountry}>
+              <option>--Country--</option>
+              {countries.map((ctr) => (
+                <option value={ctr.name}>{ctr.name}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <h3>Select State</h3>
+            <select value={state} onChange={changeState}>
+              <option>--State--</option>
+              {states.map((state) => (
+                <option value={state.name}>{state.name}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <h3>Select City</h3>
+            <select value={city} onChange={changeCity}>
+              <option>--City--</option>
+              {cities.map((city) => (
+                <option value={city}>{city}</option>
+              ))}
+            </select>
+          </div>
+          <button type="submit">Okay</button>
+        </div>
+      </form>
+
       <hr />
       <div>
         <p>
