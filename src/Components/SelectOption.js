@@ -75,15 +75,12 @@ const SelectOption = () => {
     setCity(event.target.value);
   };
 
-  console.log("country==", country);
-  console.log("statesss===", state);
-  console.log("city====", city);
+  //   console.log("country==", country);
+  //   console.log("statesss===", state);
+  //   console.log("city====", city);
 
   const handleAddress = (e) => {
     e.preventDefault();
-    // const country = country;
-    // const state = state;
-    // const city = city;
     console.log("form data=", country, "- ", state, " -", city);
   };
 
