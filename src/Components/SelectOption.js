@@ -157,7 +157,7 @@ const SelectOption = () => {
 
   const [thanas, setThanas] = useState([]);
 
-  const changeCountry = (event) => {
+  const changeDivision = (event) => {
     setDivision(event.target.value);
     setDistricts(
       wholeAddress.find((divi) => divi.divisionName === event.target.value)
@@ -165,14 +165,14 @@ const SelectOption = () => {
     );
   };
 
-  const changeState = (event) => {
+  const changeDistrict = (event) => {
     setDistrict(event.target.value);
     setThanas(
       districts.find((dis) => dis.districtName === event.target.value).thanas
     );
   };
 
-  const changeCity = (event) => {
+  const changeThana = (event) => {
     setThana(event.target.value);
   };
 
@@ -190,7 +190,7 @@ const SelectOption = () => {
           }}>
           <div style={{ marginRight: "40px" }}>
             <h3>Select Division</h3>
-            <select value={division} onChange={changeCountry}>
+            <select value={division} onChange={changeDivision}>
               <option>--Divisions--</option>
               {wholeAddress.map((divi) => (
                 <option value={divi.divisionName}>{divi.divisionName}</option>
@@ -199,7 +199,7 @@ const SelectOption = () => {
           </div>
           <div style={{ marginRight: "40px" }}>
             <h3>Select District</h3>
-            <select value={district} onChange={changeState}>
+            <select value={district} onChange={changeDistrict}>
               <option>--District--</option>
               {districts.map((dis) => (
                 <option value={dis.districtName}>{dis.districtName}</option>
@@ -208,7 +208,7 @@ const SelectOption = () => {
           </div>
           <div style={{ marginRight: "40px" }}>
             <h3>Select Thana/Upazila</h3>
-            <select value={thana} onChange={changeCity}>
+            <select value={thana} onChange={changeThana}>
               <option>--Thana--</option>
               {thanas.map((thana) => (
                 <option value={thana}>{thana}</option>

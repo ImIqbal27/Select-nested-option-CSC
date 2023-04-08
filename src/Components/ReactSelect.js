@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Test = () => {
+const ReactSelect = () => {
   const wholeAddress = [
     {
       divisionName: "Dhaka division",
@@ -188,7 +188,7 @@ const Test = () => {
   };
   return (
     <div>
-      test
+      React Select
       <form onSubmit={handleAddress}>
         <div
           style={{
@@ -245,4 +245,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default ReactSelect;
